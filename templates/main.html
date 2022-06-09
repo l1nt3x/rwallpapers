@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href={{ css_path }}/>
+        <link rel="shortcut icon" href={{ icon_path }} type="image/x-icon">
+        <title>Random Wallpapers</title>
+    </head>
+    <body id="body">
+        <header id="header">
+            <a id="logo" href={{ site_url }}>
+                <img id="site-logo" src={{ site_icon_path }} alt="Random Wallpapers" width="261" height="64"></a>
+            <a id="profile" href="profile">
+                <img id="profile-img" src={{ profile_path }} alt="Your profile" width="64" height="64"></a>
+        </header>
+        <main id="main">
+            <p class="center" >
+                <a href={{ wallpaper_path }} target="_blank">
+                    <img id="wallpaper" src={{ wallpaper_path }} alt={{ wallpaper_alt }} width="1400" height="787" /></a>
+            </p>
+            <p class="center">
+                <a class="button like">Like</a>
+                <a class="button download" href={{ wallpaper_path }} target="_blank" download={{ wallpaper_alt }}>Download</a>
+            </p>
+        </main>
+    </body>
+</html>
